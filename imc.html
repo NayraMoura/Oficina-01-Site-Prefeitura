@@ -1,0 +1,48 @@
+<!DOCTYPE html>  
+<html lang="pt-BR">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/site_icon.png" type="image/png" alt="Logo da Prefeitura de Fortaleza">  
+    <link rel="stylesheet" href="assets/css/style.css">  
+    <title>Calculadora de IMC</title>  
+</head>  
+<body>
+    <header>  
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="assets/img/prefeitura-logo.png" class="site_icon" alt="Logo da Prefeitura de Fortaleza" width="80px">
+            </div>
+            <div class="nav-list">
+            <ul>  
+                <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>  
+                <li class="nav-item"><a href="alimentacao.html" class="nav-link">Dicas de Alimentação</a></li>  
+                <li class="nav-item"><a href="imc.html" class="nav-link">Calculadora de IMC</a></li>  
+            </ul> 
+            </div> 
+        </nav>    
+    </header>  
+    <main> 
+        <br>
+        <section>  
+            <h2>Você sabe o que é IMC?</h2>
+            <P>O Índice de Massa Corporal (IMC) é uma ferramenta utilizada para avaliar se uma pessoa está com um peso saudável em relação à sua altura. Ele é um método simples e amplamente utilizado para classificar o estado nutricional de adultos. O IMC ajuda a identificar se a pessoa está abaixo do peso, com peso normal, com sobrepeso ou obesidade.</P>
+            <img src="assets/img/tabela_imc.WEBP" alt="Tabela de IMC" class="terceira-imagem"/> 
+            <h2>Agora vamos calcular o seu!!!</h2> 
+            <form id="imcForm">  
+                <label for="peso">Peso (kg):</label>  
+                <input type="number" id="peso" required>  
+                <label for="altura">Altura (m):</label>  
+                <input type="number" id="altura" step="0.01" required>  
+                <button type="submit">Calcular IMC</button>  
+            </form>  
+            <div id="resultado"></div>  
+            <img id="imagemPersonagem" src="" alt="Resultado IMC" style="display: none;">  
+        </section>  
+    </main>  
+    <footer>  
+        <p>© 2025 Prefeitura de Fortaleza - Todos os direitos reservados.</p>  
+    </footer>  
+    <script src="assets/js/script.js"></script>  
+</body>  
+</html>
